@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        position: relative;
+        width: 300px;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        padding: 1.5rem;
+        width: 100%;
+        transition: 0.5s ease;
+        opacity: 0;
+      }
+      .container:hover .overlay {
+        opacity: 1;
+      }
+    </style>
+    <title>Image Overlay Effect</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://cdn.pixabay.com/photo/2017/12/04/14/37/zakynthos-2997092_1280.jpg" alt="Zakynthos - Greek Island" />
+      <div class="overlay">Zakynthos - Greek Island</div>
+    </div>
+  </body>
+</html>
